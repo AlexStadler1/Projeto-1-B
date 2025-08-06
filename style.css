@@ -1,0 +1,86 @@
+/* CORPO GERAL */
+body {
+    color: white;
+    background: #1a1a2e; /* nova cor de fundo: azul escuro elegante */
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+/* CABEÇALHO */
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+}
+
+/* SEÇÃO DE CHAMADA */
+.chamada {
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* CATEGORIA */
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GALERIA DE VÍDEOS */
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+    height: 200px;
+    border: 3px solid #444; /* borda padrão em volta dos vídeos */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid green;
+}
+
+/* RESPONSIVIDADE PARA CHAMADA */
+@media (max-width: 768px) {
+    .chamada {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .chamada-texto {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
